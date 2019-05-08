@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter_app1/tabs/tab1.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -21,21 +23,7 @@ class MyApp extends StatelessWidget {
           ),
           body: TabBarView(
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center, children: [
-                Expanded(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center ,children: [
-                  Text('Hello World!'),
-                  RaisedButton(
-                    color: const Color(0xff0000ff),
-                    child:
-                    Text('Add'),
-                )
-              ]),
-            ),
-          ]
-          ),
+              tab1(),
               Icon(Icons.directions_transit),
               Icon(Icons.directions_bike),
             ],
